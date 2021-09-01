@@ -1,11 +1,10 @@
 #include <iostream>
 
 using namespace std;
-
-int e(int x,int n)
+double e(int x,int n)
 {
-    static int p=1,f=1;
-    int r;
+    static double p=1,f=1;
+    double r;
     if(n==0)
         return 1;
     else
@@ -18,6 +17,7 @@ int e(int x,int n)
 }
 int main()
 {
-    int x=e(2,3);
+    double x=e(2,3);
     cout<<x;
     return 0;
+}
